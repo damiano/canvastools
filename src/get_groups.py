@@ -17,7 +17,10 @@ def handleResponse(groups, access_token):
             get_profile = URL+"/users/"+str(user_id)+"/profile?access_token="+access_token
             profile = requests.get(get_profile).json()
             user_name = profile.get('sortable_name')
-            login_id = profile.get('login_id').lower()
+            try:
+              login_id = profile.get('login_id').lower()
+            except AttributeError:
+                continue
             try:
                 print(*[login_id, group_name], sep="\t")
             except TypeError:
