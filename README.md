@@ -3,7 +3,7 @@ A set of Python3 scripts to generate student and group lists from Canvas that ca
 
 **IMPORTANT: A valid Canvas access token is required to use the scripts.**
 
-**NOTE:** This scripts have been tested using `Python 3.7.2`.
+**NOTE:** This scripts have been tested using `Python 3.7.2`. Use `pip install -r requirements.txt` to install required packages.
 
 # Obtaining an access token:
 You can create a Canvas access tokens from your profile's *Settings* on Canvas, e.g., [https://rmit.instructure.com/profile/settings](https://rmit.instructure.com/profile/settings).
@@ -41,4 +41,4 @@ I wrote these scripts for personal use, and there is no guarantee that are free 
 
 # Things to improve
  - Remove hardcoded RMIT links/email suffix.
- - Impreove error handling.
+ - Improve error handling.
