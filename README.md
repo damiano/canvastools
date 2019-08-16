@@ -1,2 +1,44 @@
 # canvas2sparkplus
-A set of scripts to generate student and group lists from Canvas that can be easily uploaded to SPARPLUS.
+A set of Python3 scripts to generate student and group lists from Canvas that can be easily uploaded to SPARPLUS.
+
+**IMPORTANT: A valid Canvas access token is required to use the scripts.**
+
+**NOTE:** This scripts have been tested using `Python 3.7.2`.
+
+# Obtaining an access token:
+You can create a Canvas access tokens from your profile's *Settings* on Canvas, e.g., [https://rmit.instructure.com/profile/settings](https://rmit.instructure.com/profile/settings).
+
+For more information, check out [this link](https://community.canvaslms.com/docs/DOC-10806-4214724194).
+
+# Extracting  list of enrolled (active) students:
+
+```python get_students.py my_access_token.txt COURSE_CODE > students.txt```
+
+where:
+- `my_access_token.txt`: Text file including your Canvas access token.
+- `COURSE_ID`: Course ID of the course you want to extract the student list from. You can find the Course ID in the URL of your Canvas course.
+- `students.txt`: Output file. This is the file with the list of students you would upload to SPARKPLUS.
+
+
+# Extracting list of groups
+
+```python src/get_groups.py my_token.txt COURSE_ID GROUP_SET_ID > groups.txt```
+
+where:
+- `my_token.txt`: Text file including your Canvas access token.
+- `GROUP_SET_ID`: Group set ID from which you want to extract the groups. You can find the Group Set ID in the Canvas URL of the group set.
+- `students.txt`: Output file. This is the file with the groups you would upload to SPARKPLUS.
+
+
+# Canvas API Documentation
+https://canvas.instructure.com/doc/api/
+
+
+# Disclaimer
+
+I wrote these scripts for personal use, and there is no guarantee that are free of bugs. However, I thought are worth sharing, as other people at RMIT may find it useful. Please feel free to contribute and create pull requests to improve/extend these scripts!
+
+
+# Things to improve
+ - Remove hardcoded RMIT links/email suffix.
+ - Impreove error handling.
