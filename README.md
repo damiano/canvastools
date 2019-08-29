@@ -22,7 +22,7 @@ where:
 
 # Extracting list of groups
 
-```python src/get_groups.py my_token.txt COURSE_ID GROUP_SET_ID > groups.txt```
+```python src/get_groups.py my_token.txt GROUP_SET_ID > groups.txt```
 
 where:
 - `my_token.txt`: Text file including your Canvas access token.
