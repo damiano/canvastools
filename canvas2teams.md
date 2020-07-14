@@ -76,6 +76,12 @@ Import-Csv YOUR_STUDENTS_LIST.csv | ForEach-Object {
 }
 ```
 
+Note: If you get an error similar to this:
+  ```
+  Import-Csv: Cannot bind parameter 'Delimiter'. Cannot convert value "-\" to type "System.Char". Error: "String must be exactly one character long."
+  ```
+check that the characters in [the path of your file are correctly escaped for Powershell.](https://stackoverflow.com/questions/35225462/binding-delimiter-in-powershell)
+
 Check users in your team:
 ```
 Get-TeamUser -groupId YOUR_GROUP_ID
