@@ -2,6 +2,8 @@
 
 These are steps I followed to upload a list of students extracted from Canvas to a Microsoft Teams team using Powershell.
 
+Note: If your course is in one of the programs supported by the RMIT College of Science, Engineering and Health (SEH), you may want to contact the Learning Enhancement Team, as they can provide more information on how to sync Canvas and Microsoft Teams: https://sites.rmit.edu.au/sister/2020/05/28/introducing-microsoft-teams/ 
+
 ## Extract List of Students from Canvas
 
 On your course on Canvas:
