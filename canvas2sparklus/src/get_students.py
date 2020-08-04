@@ -37,7 +37,7 @@ def run(access_token_file, course_id):
 
     if (students.status_code==200):
         seen = set()
-        head = ["FirstName", 'LastName', 'AccountID', 'Email']
+        head = ["FirstName", 'LastName', 'AccountId', 'Email']
 
         print(*head, sep="\t")
 
