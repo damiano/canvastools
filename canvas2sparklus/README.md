@@ -10,7 +10,7 @@ You can create a Canvas access tokens from your profile's *Settings* on Canvas, 
 
 For more information, check out [this link](https://community.canvaslms.com/docs/DOC-10806-4214724194).
 
-# Extracting  list of enrolled (active) students:
+# Extracting list of enrolled (active) students:
 
 ```python get_students.py my_access_token.txt COURSE_ID > students.txt```
 
@@ -20,6 +20,16 @@ where:
 - `students.txt`: Output file. This is the file with the list of students you would upload to SPARKPLUS.
 
 
+# Extracting group set IDs in a course
+
+```python src/get_group_sets.py my_access_token.txt COURSE_ID > group_sets.txt```
+
+where:
+- `my_access_token.txt`: Text file including your Canvas API access token.
+- `COURSE_ID`: Course ID of the course you want to extract the student list from. You can find the Course ID in the URL of your Canvas course.
+- `group_sets.txt`: Output file. Each line correspond to one group set, and contains the group set ID, the name of the group set as shown on Canvas, and the role (if any) of the group set.
+
+
 # Extracting list of groups
 
 ```python src/get_groups.py my_access_token.txt GROUP_SET_ID > groups.txt```
@@ -27,7 +37,7 @@ where:
 where:
 - `my_access_token.txt`: Text file including your Canvas API access token.
 - `GROUP_SET_ID`: Group set ID from which you want to extract the groups. You can find the Group Set ID in the Canvas URL of the group set.
-- `students.txt`: Output file. This is the file with the groups you would upload to SPARKPLUS.
+- `groups.txt`: Output file. This is the file with the groups you would upload to SPARKPLUS.
 
 
 # Canvas API Documentation
