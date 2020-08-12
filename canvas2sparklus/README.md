@@ -12,7 +12,7 @@ For more information, check out [this link](https://community.canvaslms.com/docs
 
 # Extracting list of enrolled (active) students:
 
-```python get_students.py my_access_token.txt COURSE_ID > students.txt```
+```python src/get_students.py my_access_token.txt COURSE_ID > students.txt```
 
 where:
 - `my_access_token.txt`: Text file including your Canvas API access token.
