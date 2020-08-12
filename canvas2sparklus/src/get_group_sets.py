@@ -22,7 +22,7 @@ def run(access_token_file, course_id):
     access_token = access_token_file.readline()
     
     get_group_sets = URL+"/courses/"+str(course_id)+"/group_categories?access_token="+access_token +"&per_page=50"
-    print(get_group_sets)
+    # print(get_group_sets)
     group_sets=requests.get(get_group_sets)
     if (group_sets.status_code==200):
         header = ["GroupSetID", "GroupSetName", "GroupSetRole"]
