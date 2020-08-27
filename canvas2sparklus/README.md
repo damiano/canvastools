@@ -48,6 +48,22 @@ https://canvas.instructure.com/doc/api/
 
 I wrote these scripts for personal use, and there is no guarantee that are free of bugs. However, I thought are worth sharing, as other people at RMIT may find it useful. Please feel free to contribute and create pull requests to improve/extend these scripts!
 
+# Troubleshooting
+
+
+## Endoding errors in Windows terminal
+
+If you run these scripts from a Windows machine, you may have problems with encodings. If you get an error similar to this one:
+
+```python
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-3: character maps to <undefined>
+```
+Set the the encoding to `UTF-8` by running the following command in your terminal:
+```shell
+set PYTHONIOENCODING=utf-8
+```
+Then, try again :)
+
 
 # Things to improve
  - Remove hardcoded RMIT links/email suffix.
