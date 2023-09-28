@@ -38,7 +38,7 @@ Hereafter I will refer to this ID as `YOUR_GROUP_ID`
 On Mac, install Powershell:
 
 ```
-brew cask install powershell
+brew install powershell
 ```
 
 On Mac, run Powershell:
